@@ -6,7 +6,6 @@
 	padding-top:10px;
 	opacity: 0.5;
 	background: black;
-
 	}
 
 	.headerText {	
@@ -14,7 +13,7 @@
 	font-family:'Open Sans', sans-serif;
 	box-shadow: 1px 1px 5px #000;
 	height: 70px;	
-	padding-left: 60px;
+	
 	padding-top:0;
 
 	}
@@ -86,7 +85,7 @@ padding-bottom: 0;
 
 	font-size: 18px;
 	display: inline-block;
-	padding-left: 250px;
+	padding-left: 15%;
 	color:grey;
 }
 
@@ -117,6 +116,7 @@ padding-bottom: 0;
 
   .portada { 
 	background-image: url('../Images/business.jpg'); 
+	
 	color: white; 
 	padding-bottom: 270px; 
 	margin-top: 1px;
@@ -178,7 +178,9 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 	
 }
 
+.equipo .emmanuel{
 
+}
 		
 
 
@@ -187,17 +189,37 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 	background:#e6e6e6;
 	opacity: 0.8;
 }
+
+.Integrantes{
+	display: flex;
+	justify-content: space-between;
+	float:left;
+	margin-left: 5%;
+}
+
+ .Emmanuel {
+ 	
+	margin-left: 20%;
+
+	}
+
+	 .Mati {
 	
+	margin-left: 20%;
+	}
 
-.equipo {
-	margin-top: 50px;
-	font-size: 20px;
-
+ .Samuel {
+	
+	margin-left: 20%;
 	}
 
 
 
+ .Juan {
+	
+	margin-left: 20%;
 
+	}
 
 
 .equipo img
@@ -205,10 +227,9 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 	display: flex;
 	justify-content: space-between;
 	float:left;
-
 	
-	margin-left: 100px;
-	margin-right: 90px;
+	margin-left: 10%;
+	margin-right: 10%;
 
 }
 

@@ -41,7 +41,7 @@
 		<link rel="stylesheet" href="css/index.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Heebo:800" rel="stylesheet">
-
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style type="text/css" media="screen">
 		A:link {color: grey; text-decoration: none }
 		A:hover {color: white; text-decoration: none }
@@ -49,16 +49,13 @@
 		#link { color: grey; text-decoration: none }
 		</style>
 
-
-
 	</head>
-	<body>
-
-
+	<body onload="javascript:resizeTo(300,500)"> 	
 
 		<section id= "portada" class= "portada"> <!--Portada-->
-		<div class="header"> <!--Header-->
 
+		<div class="header"> <!--Header-->
+	
 					<div class="headerText"> <!--Header-->
 
 								<figure class= "logotipo"> <!-- Logotipo -->
@@ -71,19 +68,19 @@
 									<ul>
 
 											<li>
-												<a href  = index.html >  Home</a>
+												<a href  = index.html style="font-size:1vw;">  Home</a>
 											</li>
 											<li>
-												<a href = #equipo>  Nuestro equipo</a>
+												<a href = #equipo style="font-size:1vw;">  Nuestro equipo</a>
 											</li>
 											<li>
-												<a href = #tecnologias >  Projectos</a>
+												<a href = #tecnologias style="font-size:1vw;">  Projectos</a>
 											</li>
 											<li>
-												<a href = #tecnologias> Tecnologias</a>
+												<a href = #tecnologias style="font-size:1vw;"> Tecnologias</a>
 											</li>
 											<li>
-												<a href = #Actividades> Actividades</a>
+												<a href = #Actividades style="font-size:1vw;"> Actividades</a>
 											</li>
 
 										</ul>
@@ -93,11 +90,11 @@
 
 							</div>
 					</div>
-
+		
  			<div class = "portadaText" >
 
-				<h1 class="titulo" > Open Desing</h1><!-- titulo -->
-				<h3 class="title-a"> Diseño web  Aplicaciones Moviles Base de datos  </h3><!-- resumen -->
+				<h1 class="titulo" style="font-size:4vw;"> Open Desing</h1><!-- titulo -->
+				<h3 class="title-a" style="font-size:1vw;"> Diseño web  Aplicaciones Moviles Base de datos  </h3><!-- resumen -->
 
 				<button href = index.html> Ver Mas</button> <!-- boton -->
 
@@ -110,32 +107,47 @@
 		<div class= "wrapper">
 
 			<div align="center">
-		<h2>Nuestro equipo</h2> <!-- Item 1 -->
+		<h2 style="font-size:4vw;">Nuestro equipo</h2> <!-- Item 1 -->
 			</div>
 
 			<article class= "equipo" > <!-- Equipo 1 -->
 
-					<ol>
+						
+									<div class= "Integrantes"> 
+							<div class= "Emmanuel"> 
 							<img src ="./Images/tipo1.png" width= "50" height= "50"/>
+							<a id="link" href = index.html style="font-size:1vw;">Emmanuel Franco </a>
+							</div>
+							<div class= "Samuel"> 
 							<img src ="./Images/tipo2.png" width= "50" height= "50"/>
-							<img src ="./Images/tipo3.png" width= "50" height= "50"/>
-							<img src ="./Images/tipo4.png" width= "50" height= "50"/>
-					</ol>
+							<a id="link" href = index.html style="font-size:1vw;">Samuel Cicciari</a>
+							</div>
+							<div class= "Juan"> 
+							<img src ="./Images/tipo3.png" width= "50" height= "50"/>		
+							<a id="link" href = index.html style="font-size:1vw;">Juan Manuel</a>
+							</div>
+							<div class= "Mati"> 
+							<img src ="./Images/tipo4.png" width= "50" height= "50"/>	
+							<a id="link" href = index.html style="font-size:1vw;">Mati Calegari</a>
+									</div>		
+							
+							
 
 			</article>
+
+
 
 			<article class= "Nombres" >
 
 		<ul>
 
 			<div class="wrapper" >
-				<a id="link" href = index.html >Emmanuel Franco </a>
+				
+				
 
-				<a id="link" href = index.html>Samuel Cicciari</a>
+				
 
-				<a id="link" href = index.html>Juan Manuel</a>
-
-				<a id="link" href = index.html>Mati Callegaris</a>
+				
 			</div>
 
 		</ul>
@@ -148,7 +160,7 @@
 
 				<div  class= "Seccionfrase">
 										<section id = "frase" class= "frase wrapper">
-										<p> "Try not to become a man of success, but rather try to become a man of value." </p>
+										<p style="font-size:2vw;"> "Try not to become a man of success, but rather try to become a man of value." </p>
 									</section>
 							</div>
 
@@ -158,12 +170,9 @@
 				<section id = "Actividades" class= "equipo">
 					
 						
-					
-				
-
 				
 					<div align="center">
-					<h2>  Desarrollamos </h2>
+					<h2 style="font-size:4vw;">  Desarrollamos </h2>
 					</div>
 
 					
@@ -184,9 +193,9 @@
 			<article class= "ActividadesDescripcion" >
 				<div class= "wrapper">
 
-				<a id="link" href = index.html> Apps móviles</a>
-				<a id="link" href = index.html> Proyectos webs</a>
-				<a id="link" href = index.html> Sistemas de escritorio</a>
+				<a id="link" href = index.html style="font-size:1vw;"> Apps móviles</a>
+				<a id="link" href = index.html style="font-size:1vw;"> Proyectos webs</a>
+				<a id="link" href = index.html style="font-size:1vw;"> Sistemas de escritorio</a>
 				</div>		
 						
 			</article>
@@ -196,7 +205,7 @@
 
 			<div  class= "Seccionfrase">
 						<section id = "frase" class= "frase wrapper">
-						<p> "Try not to become a man of success, but rather try to become a man of value." </p>
+						<p style="font-size:2vw;"> "Try not to become a man of success, but rather try to become a man of value." </p>
 						</section>
 			</div>
 
@@ -204,7 +213,7 @@
 
 		<div class= "wrapper">
 			<div align="center">
-			<h2>Tecnologías</h2>
+			<h2 style="font-size:4vw;">Tecnologías</h2>
 			</div>
 
 			<article class= "tecnologias" >
@@ -225,7 +234,7 @@
 			<div  class= "preFooter">
 				<div class= "wrapper">
 						<section id = "frase" class= "preFooter">
-						<h2> View more</h2>
+						<h2 style="font-size:2vw;"> View more</h2>
 						<h3><a href="">publications</a>, </h3> <h3><a href="">updates </a> , </h3><h3><a href=""> projects</a></h3>
 
 						</section>
