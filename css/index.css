@@ -32,22 +32,17 @@
 
 	
 	
-.logotipo{
-display: inline-block;
-margin:5px;
-
-}
+	.logotipo{
+	display: inline-block;
+	margin:5px;
+	}
 
  
-body{
-
-
-		background:#f2f2f2;
-
-		margin: 0;
-
+	body{
+	background:#f2f2f2;
+	margin: 0;
 	/* background: #fffffa; */
-}
+	}
 
 .wrapper {	
 width: 90%;
@@ -98,36 +93,24 @@ float:right;
 .preFooter h3{
 	display: inline-block;
 	font-family: 'Heebo', sans-serif;font-size: 30px;
-
 	color:#d9d9d9;
-
-
 }
 
 .preFooter h2{
 	font-family: 'Heebo', sans-serif;font-size: 40px;
 	color:#d9d9d9;	
-padding-bottom: 0;
-}
+	padding-bottom: 0;
+	}
 
 
 .menu {
-
-	font-size: 18px;
+	font-size: 20px;
 	display: inline-block;
 	padding-left: 15%;
 	color:grey;
-
 }
 
 
-
-.menu ul a {
-	padding: 7px 15px 7px 15px;
-	background: transparent;
-	
-
-}
 
 .menu li {
 	margin-left: 10px;
@@ -254,8 +237,7 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 	}
 	.Act1 a{
 	width: 33%;
-		}
-
+	}
 
 .equipo img
  {
@@ -265,6 +247,21 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 	
 	margin-left: 10%;
 	margin-right: 10%;
+
+ 	max-width: 100%;
+    height: auto;
+
+}
+
+.tecnologias img
+ {
+	display: flex;
+	justify-content: space-between;
+	float:left;
+	margin-left: 10%;
+	margin-right: 10%;
+ 	max-width: 100%;
+    height: auto;
 
 }
 
@@ -405,73 +402,97 @@ margin:  10px 10px 10px 0px;
     font-size: 18px;
 }
 
+@media only screen and (min-width: 781) and (max-width: 1190px) {
+  
+.menu a{
+ font-size: 20px;
+ padding-left: 0px;
+ padding-right: 0px;
+ margin: 0;
+ }
 
-@media screen and (max-width:780px) {
-		h1 { font-size: 50px; }
+.menu{
+padding:0;
+padding-left: 10%;
+}
+
+.menu li{
+margin: 0;
+padding-top: 0;
+}
+  
+}
+
+
+@media screen and (max-width: 780px) {
+		h1 { font-size: 50px;}
 		h2 { font-size: 28px;}
 		h3 { font-size: 28px;}
-		a  { font-size: 15px;}
-		p  { font-size: 20px;}
+		a  { font-size: 13px;}
+		p  { font-size: 15px;}
 
 	.header{
-
    	width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
  	background: black;
-	padding-bottom: 300px;
-	opacity: 0.8;
+	padding-bottom: 320px;
+	opacity: 1;
 	text-align:left;
 	}	
 
-	.header a{
-	float: none;
-    
-	}
 	.p1{
 	margin-left: 1%;
 	width: 100%;
 	padding: 20px;
 	}
 
-
 	.Act{
 	margin-left: 0;
 	width: 100%;
 	}
+
 	.Act1 {
 	margin-left: 1%;
 	}
 
-	.menu, {
+	.menu {
     width:100%;
     text-align: center;
- overflow: hidden;
-  
-  
-
+	overflow: hidden;
+	padding-left: 0;
+	padding-right: 10%;	
  	}
-  	.menu li{
-  			text-align: center;
-  			width: 50%;
 
+  	.menu li{
+  	text-align: center;
+  	width: 100%;
+  	margin:0;
+  	margin-bottom: 20px;
   	}
-  	
+
+  	.menu a{
+  	font-size: 25px;
+  	}	
+
 	.portada { 
 	background-image: url('../Images/background2.jpg'); 		
 	color: white; 
 	margin-top: 0;
 	box-shadow: 1px 1px 5px #000;
 	padding-bottom:0;
-	 overflow: hidden;
-  
+	overflow: hidden;
 	} 
+	
+	.tecnologias img{
+	width: 20%;
+	}
 
 	.portadaText{
-	
-	background-color:black;
-	opacity: 0.8;
 	padding: 0 0 0 0;
-	 text-align:left;
+	color: transparent;
+  	background: black;
+   	opacity: 1;
 	}
+
 	.portada button{
 	background: transparent;
 	color: transparent;
@@ -482,23 +503,12 @@ margin:  10px 10px 10px 0px;
     }
     .footer{
 	width:100%;
-
     }
-}
 
-@media screen and (max-width:1375px) and (min-width:781px){
+ 
+  	}
 
-	 	.header{
-	 	padding-bottom: 50px;
-			width: 100%;
-		opacity: 0.6;
-		}
-		.logotipo{
-			padding-top: 1%;
-		
-		}
-		
-	 }
+
 
 
 .container {
@@ -509,7 +519,7 @@ margin:  10px 10px 10px 0px;
   margin: 16px;
 }
 
-.container::after {
+.container::after{
   content: "";
   clear: both;
   display: table;
@@ -537,3 +547,24 @@ margin:  10px 10px 10px 0px;
   }
 }
 	
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    opacity:0.2; 
+    background-color: #555;
+}
+
+#myBtn:hover {
+     background-color: red; /* Set a background color */
+    }
+ 

@@ -28,9 +28,27 @@
    });
 });
 
+		</script>
 
-</script>
 
+<script type="text/javascript">
+	window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("myBtn").style.display = "block";
+         $('html,body').animate({scrollTop: targetOffset}, 1000);
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+         $('html,body').animate({scrollTop: targetOffset}, 1000);
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} </script>
 	<head>
 		<title>Open Desing</title>
 		<meta charset="utf-8"/>
@@ -38,12 +56,13 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Heebo:800" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" media="@media screen and (max-width: 780px)" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" media="@media screen and (max-width: 1300px)" href="css/index.css" />
 		<style type="text/css" media="screen">
 		A:link {color: grey; text-decoration: none }
 		A:hover {color: white; text-decoration: none }
 		A:visited {color: grey; text-decoration: none }
 		#link { color: grey; text-decoration: none }
-
 
 		</style>
 
@@ -66,19 +85,19 @@
 									<ul>
 
 											<li>
-												<a href  = index.html style="font-size:20px;">  Home</a>
+												<a href  = index.html >  Home</a>
 											</li>
 											<li>
-												<a href = #equipo style="font-size:20px;">  Nuestro equipo</a>
+												<a href = #equipo>  Nuestro equipo</a>
 											</li>
 											<li>
-												<a href = #price style="font-size:20px;">  Precios</a>
+												<a href = #price>  Precios</a>
 											</li>
 											<li>
-												<a href = #tecnologias style="font-size:20px;"> Tecnologias</a>
+												<a href = #tecnologias> Tecnologias</a>
 											</li>
 											<li>
-												<a href = #Actividades style="font-size:20px;"> Actividades</a>
+												<a href = #Actividades> Actividades</a>
 											</li>
 											
 											
@@ -92,8 +111,8 @@
 		
  			<div class = "portadaText" >
 
-				<h1 class="titulo" style="font-size:4vw;"> Open Desing</h1><!-- titulo -->
-				<h3 class="title-a" style="font-size:2vw;"> Diseño web  Aplicaciones Moviles Base de datos  </h3><!-- resumen -->
+				<h1 class="titulo" > Open Desing</h1><!-- titulo -->
+				<h3 class="title-a" > Diseño web  Aplicaciones Moviles Base de datos</h3><!-- resumen -->
 
 				<button href = index.html> Ver Mas</button> <!-- boton -->
 
@@ -117,7 +136,7 @@
 
 					
 							<div class= "Integrantes"> 
-								<div class= "p1"> 
+								<div class= "p1" 	> 
 								<img src ="./Images/tipo1.png" width= "50" height= "50" />
 								<a id="link" href = https://github.com/EmmanuelFranco > Emmanuel Franco </a>
 								</div>
@@ -230,7 +249,7 @@ function openTab(tabName) {
 						</section>
 			</div>
 
-<section id = "tecnologias" class= "equipo">
+<section id = "tecnologias" class= "tecnologias">
 
 		<div class= "wrapper">
 			<div align="center">
@@ -318,7 +337,7 @@ function openTab(tabName) {
 						</section>
 				</div>
 			</div>
-
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 	
 			<footer class= "footer">
 
 				<div class= "wrapper">
