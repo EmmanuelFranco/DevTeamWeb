@@ -412,13 +412,12 @@ margin:  10px 10px 10px 0px;
 		p  { font-size: 20px;}
 
 	.header{
-   	width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
+  width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
  	background: black;
-	padding-bottom: 320px;
-	opacity: 0.9;
+	padding-bottom: 315px;
+	opacity: 1;
 	text-align:left;
 	}	
-
 
 	.p1{
 	margin-left: 1%;
@@ -437,19 +436,19 @@ margin:  10px 10px 10px 0px;
 	}
 
 	.menu {
-    width:100%;
-    text-align: center;
+  width:100%;
+  text-align: center;
 	overflow: hidden;
 	padding-left: 0;
 	padding-right: 10%;	
  	}
 
-  	.menu li{
-  	text-align: center;
-  	width: 100%;
-  	margin:0;
-  	margin-bottom: 5px;
-  	}
+  .menu li{
+  text-align: center;
+  width: 100%;
+  margin:0;
+  margin-bottom: 5px;
+  }
   	
 	.portada { 
 	background-image: url('../Images/background2.jpg'); 		
@@ -461,10 +460,10 @@ margin:  10px 10px 10px 0px;
 	} 
 
 	.portadaText{
-	padding: 0 0 0 0;
-	color: transparent;
+		padding: 0 0 0 0;
+		color: transparent;
   	background: black;
-   	opacity: 0.8;
+   	opacity: 1;
 	}
 
 	.portada button{
