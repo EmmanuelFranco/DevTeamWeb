@@ -430,7 +430,9 @@ padding-top: 0;
 		h3 { font-size: 28px;}
 		a  { font-size: 13px;}
 		p  { font-size: 15px;}
-
+	.contacto{
+		margin-left:10%;
+	}
 	.header{
    	width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
  	background: black;
