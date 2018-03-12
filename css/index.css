@@ -404,8 +404,6 @@ margin:  10px 10px 10px 0px;
     text-decoration: none;
     font-size: 18px;
 }
-
-
 @media screen and (max-width:780px) {
 		h1 { font-size: 50px; }
 		h2 { font-size: 28px;}
@@ -414,18 +412,14 @@ margin:  10px 10px 10px 0px;
 		p  { font-size: 20px;}
 
 	.header{
-
    	width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
  	background: black;
-	padding-bottom: 300px;
+	padding-bottom: 270px;
 	opacity: 0.8;
 	text-align:left;
 	}	
 
-	.header a{
-	float: none;
-    
-	}
+
 	.p1{
 	margin-left: 1%;
 	width: 100%;
@@ -436,21 +430,25 @@ margin:  10px 10px 10px 0px;
 	.Act{
 	margin-left: 0;
 	width: 100%;
+
 	}
 	.Act1 {
 	margin-left: 1%;
 	}
 
-	.menu, {
-	 width:100%;
-   	 text-align: center;
-	 overflow: hidden;
-  
+	.menu {
+    width:100%;
+    text-align: center;
+	overflow: hidden;
+	padding-left: 0;
+	padding-right: 10%;	
  	}
+
   	.menu li{
   	text-align: center;
   	width: 100%;
-
+  	margin:0;
+  	margin-bottom: 5px;
   	}
   	
 	.portada { 
@@ -459,17 +457,16 @@ margin:  10px 10px 10px 0px;
 	margin-top: 0;
 	box-shadow: 1px 1px 5px #000;
 	padding-bottom:0;
-	 overflow: hidden;
-  
+	overflow: hidden;
 	} 
 
 	.portadaText{
-	
-	background-color:black;
-	opacity: 0.8;
 	padding: 0 0 0 0;
-	 text-align:left;
+	color: transparent;
+  	background: black;
+   	opacity: 0.8;
 	}
+
 	.portada button{
 	background: transparent;
 	color: transparent;
@@ -480,7 +477,6 @@ margin:  10px 10px 10px 0px;
     }
     .footer{
 	width:100%;
-
     }
 }
 
