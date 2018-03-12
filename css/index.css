@@ -442,16 +442,14 @@ margin:  10px 10px 10px 0px;
 	}
 
 	.menu, {
-    width:100%;
-    text-align: center;
- overflow: hidden;
+	 width:100%;
+   	 text-align: center;
+	 overflow: hidden;
   
-  
-
  	}
   	.menu li{
-  			text-align: center;
-  			width: 50%;
+  	text-align: center;
+  	width: 100%;
 
   	}
   	
