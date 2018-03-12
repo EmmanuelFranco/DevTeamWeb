@@ -54,11 +54,9 @@
 function scrollFunction() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         document.getElementById("myBtn").style.display = "block";
-         $('html,body').animate({scrollTop: targetOffset}, 1000);
-    } else {
+        } else {
         document.getElementById("myBtn").style.display = "none";
-         $('html,body').animate({scrollTop: targetOffset}, 1000);
-    }
+        }
 }
 
 // When the user clicks on the button, scroll to the top of the document
