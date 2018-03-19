@@ -1,28 +1,9 @@
 <!DOCTYPE html>
 <html>
-	
-	<head>
-		<title>Open Desing</title>
-		<meta charset="utf-8"/>
-		<link rel="stylesheet" href="css/index.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Heebo:800" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" media="@media screen and (max-width: 780px)" href="css/index.css" />
-		<link rel="stylesheet" type="text/css" media="@media screen and (max-width: 1300px)" href="css/index.css" />
-		<style type="text/css" media="screen">
-		A:link {color: grey; text-decoration: none }
-		A:hover {color: white; text-decoration: none }
-		A:visited {color: grey; text-decoration: none }
-		#link { color: grey; text-decoration: none }
-
-		</style>
-		
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+	<!-- Script para deslizar!-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
 		type="text/javascript" charset="utf-8"></script>
 
-		
-		<!-- Script para deslizar!-->
 		<script type="text/javascript" >
 		$(function(){
 
@@ -46,6 +27,393 @@
        }
    });
 });
+
+		</script>
+
+
+<script type="text/javascript">
+	window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("myBtn").style.display = "block";
+       
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+        
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} </script>
+
+<script type="text/javascript">
+// Este script es para achicar el header
+$(document).scroll(function() {
+  navbarScroll();
+});
+
+function navbarScroll() {
+  var y = window.scrollY;
+  if (y > 70) {
+    $('.header').addClass('small');
+  } else if (y < 70) {
+    $('.header').removeClass('small');
+  }
+}		
+</script>
+
+
+	<head>
+		<title>Open Desing</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/index.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Heebo:800" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" media="@media screen and (max-width: 780px)" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" media="@media screen and (max-width: 1300px)" href="css/index.css" />
+		<style type="text/css" media="screen">
+		A:link {color: grey; text-decoration: none }
+		A:hover {color: white; text-decoration: none }
+		A:visited {color: grey; text-decoration: none }
+		#link { color: grey; text-decoration: none }
+
+		</style>
+
+	</head>
+	<body> 	
+
+		<section id= "portada" class= "portada"> <!--Portada-->
+
+		<div class="header" id=myHeader> <!--Header-->
+	
+					<div class="headerText"> <!--Header-->
+
+								<figure class= "logotipo"> <!-- Logotipo -->
+								<a href = index.html>
+								<img src ="./Images/logo.png" width="80" height="40" />
+								<a href  = index.html >  Open Desing </a>
+								</figure>
+									<nav class = "menu"> <!--menu-->
+
+									<ul>
+
+											<li>
+												<a href  = index.html >  Home</a>
+											</li>
+											<li>
+												<a href = #equipo>  Nuestro equipo</a>
+											</li>
+											<li>
+												<a href = #Actividades> Actividades</a>
+											</li>
+											<li>
+												<a href = #tecnologias> Tecnologias</a>
+											</li>
+											<li>
+												<a href = #precios>  Precios</a>
+											</li>
+											
+										</ul>
+
+									</nav>
+
+
+							</div>
+					</div>
+		
+ 			<div class = "portadaText" >
+
+				<h1 class="titulo" > Open Desing</h1><!-- titulo -->
+				<h3 class="title-a" > Diseño web  Aplicaciones Moviles Base de datos</h3><!-- resumen -->
+
+				<button href = index.html> Ver Mas</button> <!-- boton -->
+
+			</div>
+
+
+
+		</section>
+
+
+
+		<section id = "equipo" class= "equipo"> <!--Seccion2-->
+
+		<div class= "wrapper">
+
+			<div align="center">
+		<h2>Nuestro equipo</h2> <!-- Item 1 -->
+			</div>
+
+			<article class= "equipo" > <!-- Equipo 1 -->
+
+					
+							<div class= "Integrantes"> 
+								<div class= "p1" 	> 
+								<img src ="./Images/tipo1.png" width= "50" height= "50" />
+								<a id="link" href = https://github.com/EmmanuelFranco > Emmanuel Franco </a>
+								</div>
+								<div class= "p1"> 
+								<img src ="./Images/tipo2.png" width= "50" height= "50"/>
+								<a id="link" href = https://github.com/SamuelRolonC >Samuel Cicciari</a>
+								</div>
+								<div class= "p1"> 
+								<img src ="./Images/tipo3.png" width= "50" height= "50"/>		
+								<a id="link" href = https://github.com/jmgaitan		>Juan <br>  Manuel</a>
+								</div>
+								<div class= "p1"> 
+								<img src ="./Images/tipo4.png" width= "50" height= "50"/>	
+								<a id="link" href = index.html >Mati Calegari</a>
+								</div>		
+							</div>
+							
+
+			</article>
+</section>
+
+				<div  class= "Seccionfrase">
+										<section id = "frase" class= "frase wrapper">
+										<p> "Try not to become a man of success, but rather try to become a man of value." </p>
+									</section>
+							</div>
+
+
+
+<section id = "Actividades" class= "Actividades"> <!--Seccion2-->
+
+		<div class= "wrapper">
+
+			<div align="center">
+			<h2>  Desarrollamos </h2> <!-- Item 1 -->
+			</div>
+
+				<article class= "Actividades" > <!-- Equipo 1 -->
+							
+							<div class= "Act"> 
+								<div class="column" onclick="openTab('b1');" >
+								<div class= "Act1" > 
+									<img src ="./Images/android.png" width= "50" height= "50"/ >
+									<a id="link"  > <br>  Apps  <br> móviles</a>
+								</div>
+								</div>
+								<div class="column" onclick="openTab('b2');" >
+								<div class= "Act1"> 
+									<img src ="./Images/web.png" width= "50" height= "50"/>
+									<a id="link"  > <br>  Proyectos  <br> webs</a>							
+								</div></div>
+								<div class="column" onclick="openTab('b3');" >
+								<div class= "Act1"> 
+											<img src ="./Images/pc.png" width= "50" height= "50"/>
+										<a id="link"> <br>  Sistemas de  <br> escritorio</a>
+								</div></div>
+									<div class="column" onclick="openTab('b4');" >
+									<div class= "Act1"> 
+											<img src ="./Images/db.png" width= "50" height= "50"/>
+										<a id="link" > <br>  Database  <br> structure</a>
+								</div></div>
+								
+							</div>	
+
+							<div id="b1" class="containerTab" style="display:none;background: f2f2f2">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2 style=" font-size: 20px; color:black;">Aplicaciones Moviles</h2>
+  <p>Una aplicación móvil, aplicación, apli​ o app, es una aplicación informática diseñada para ser ejecutada en teléfonos inteligentes, tabletas y otros dispositivos móviles y que permite al usuario efectuar una tarea concreta de ...</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:f2f2f2">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2 style=" font-size: 23px; color:black;">Diseño web  </h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:f2f2f2">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2 style=" font-size: 20px; color:black;">Programas de escritorio</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b4" class="containerTab" style="display:none;background:f2f2f2">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2 style=" font-size: 20px; color:black;">Database MySQL/Express</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>			
+
+				</article>
+			
+			</div>
+</section>
+
+				
+
+			<div  class= "Seccionfrase">
+						<section id = "frase" class= "frase wrapper">
+						<p> "Try not to become a man of success, but rather try to become a man of value." </p>
+						</section>
+			</div>
+
+<section id = "tecnologias" class= "tecnologias">
+
+		<div class= "wrapper">
+			<div align="center">
+			<h2>Tecnologías</h2>
+			</div>
+
+			<article class= "tecnologias" >
+
+					<ol>
+							<img src ="./Images/java.png" width= "100" height= "100"/>
+							<img src ="./Images/css3.png" width= "100" height= "100"/>
+							<img src ="./Images/android2.png" width= "100" height= "100"/>
+							<img src ="./Images/mysql.png" width= "100" height= "100"/>
+							<img src ="./Images/html5.png" width= "100" height= "100"/>
+							<img src ="./Images/c++.png" width= "100" height= "100"/>
+							<img src ="./Images/phython.png" width= "100" height= "100"/>
+							<img src ="./Images/angular.png" width= "100" height= "100"/>
+							<img src ="./Images/php.png" width= "100" height= "100"/>
+					</ol>
+
+
+			</article>
+			</div>
+			<section id = "precios" class= "precios">
+			</section>
+
+
+
+<h2 style="text-align:center" id ="price" >Precios</h2>	
+
+<div class="columns">
+  <ul class="price" >
+    <li class="header">Basic</li>
+    <li class="grey"> $4,572 </li>
+    <li>6 meses de servicio tecnico</li>
+    <li>Home y 5 secciones</li>
+    <li>Contrato de 1 Domain</li>
+    <li>1GB Bandwidth</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:green">Pro</li>
+    <li class="grey">$ 24.99 / year</li>
+    <li>25GB Storage</li>
+    <li>25 Emails</li>
+    <li>25 Domains</li>
+    <li>2GB Bandwidth</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Premium</li>
+    <li class="grey">$ 49.99 / year</li>
+    <li>50GB Storage</li>
+    <li>50 Emails</li>
+    <li>50 Domains</li>
+    <li>5GB Bandwidth</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+</section>
+	
+<h2 style="text-align:center">Clientes satisfechos</h2>
+
+<div class="container">
+  <img src="./Images/tipo1.png" alt="Avatar" style="width:90px">
+  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+  <p>Emmanuel es un gran programador y diseñador web!.</p>
+</div>
+
+<div class="container">
+  <img src="./Images/tipo1.png" alt="Avatar" style="width:90px">
+  <p><span>Rebecca Flex.</span> CEO at Company.</p>
+  <p>El mejor Draven es el de Emma</p>
+</div>
+
+
+			<div  class= "preFooter">
+				<div class= "wrapper">
+						<section id = "frase" class= "preFooter">
+						<h2> View more</h2>
+						<h3><a href="">publications</a>, </h3> <h3><a href="">updates </a> , </h3><h3><a href=""> projects</a></h3>
+						</section>
+				</div>
+			</div>
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 	
+			<footer class= "footer">
+
+				<div class= "wrapper">
+
+						<div class= "contacto">
+						<a href="tel:+573024456678"><strong>Telefono: </strong><span>+573024456678</span></a>
+						<a href="mailto:contacto@contacto.com"><strong>E-mail: </strong><span>contacto@contacto.com</span></a>
+						</div>
+							<form class = "formulario">
+								<div class= "col1">
+											<label for="nombre">Nombre</label>
+										<input type="text" name= "nombre" required placeholder="Nombre" required id="nombre"  />
+										<!-- <label for="apellido">Apellido</label>
+										<input type="text" name="apellido" required placeholder="Apellido" required id="apellido" /> -->
+										<label for="email">E-mail </label>
+										<input type="email" nombre="email" required placeholder="E-mail" required id="email" />
+
+											<div class="sexo">
+												<label for= "mujer">
+													<input type="radio" id = "mujer" name="sexo">Mujer</label>
+												<label for= "hombre">
+													<input type="radio" id = "hombre" name="sexo">Hombre</label>
+											</div>
+
+
+
+										<div class="intereses">
+											<label for= "checkbox">
+											<input type="checkbox" name="checkbox">Checkbox</label>
+										</div>
+									</div>
+									<div class="col2">
+										<label for="comentario">Comentarios</label>
+										<textarea name="comentairos" id="comentarios cols="30" rows="7"></textarea>
+										<input type="submit" value="Enviar">
+
+
+									</div>
+
+
+								</div>
+
+							</form>
+
+
+
+				</div>
+
+			</footer>
+
+
+
+
+	</body>
+</html>
 
 		</script>
 
