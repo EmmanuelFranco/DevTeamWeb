@@ -37,10 +37,10 @@
 function scrollFunction() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         document.getElementById("myBtn").style.display = "block";
-         $('html,body').animate({scrollTop: targetOffset}, 1000);
+       
     } else {
         document.getElementById("myBtn").style.display = "none";
-         $('html,body').animate({scrollTop: targetOffset}, 1000);
+        
     }
 }
 
@@ -49,6 +49,24 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } </script>
+
+<script type="text/javascript">
+// Este script es para achicar el header
+$(document).scroll(function() {
+  navbarScroll();
+});
+
+function navbarScroll() {
+  var y = window.scrollY;
+  if (y > 70) {
+    $('.header').addClass('small');
+  } else if (y < 70) {
+    $('.header').removeClass('small');
+  }
+}		
+</script>
+
+
 	<head>
 		<title>Open Desing</title>
 		<meta charset="utf-8"/>
@@ -67,7 +85,7 @@ function topFunction() {
 		</style>
 
 	</head>
-	<body onload="javascript:resizeTo(300,500)"> 	
+	<body> 	
 
 		<section id= "portada" class= "portada"> <!--Portada-->
 
@@ -91,15 +109,14 @@ function topFunction() {
 												<a href = #equipo>  Nuestro equipo</a>
 											</li>
 											<li>
-												<a href = #price>  Precios</a>
+												<a href = #Actividades> Actividades</a>
 											</li>
 											<li>
 												<a href = #tecnologias> Tecnologias</a>
 											</li>
 											<li>
-												<a href = #Actividades> Actividades</a>
+												<a href = #precios>  Precios</a>
 											</li>
-											
 											
 										</ul>
 
@@ -270,11 +287,15 @@ function openTab(tabName) {
 							<img src ="./Images/php.png" width= "100" height= "100"/>
 					</ol>
 
+
 			</article>
 			</div>
+			<section id = "precios" class= "precios">
 			</section>
 
-			<h2 style="text-align:center" id ="price" >Precios</h2>	
+
+
+<h2 style="text-align:center" id ="price" >Precios</h2>	
 
 <div class="columns">
   <ul class="price" >
@@ -312,7 +333,7 @@ function openTab(tabName) {
   </ul>
 </div>
 
-
+</section>
 	
 <h2 style="text-align:center">Clientes satisfechos</h2>
 
