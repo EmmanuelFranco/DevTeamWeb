@@ -468,8 +468,8 @@ padding-top: 0;
 	}
 
 	.menu {
-    width:100%;
-    text-align: center;
+    	width:100%;
+    	text-align: center;
 	overflow: hidden;
 	padding-left: 0;
 	padding-right: 10%;	
@@ -494,7 +494,7 @@ padding-top: 0;
 	}
 
 	.equipo{
-		background: red;
+		background: black;
 	}
 
 	.tecnologias img{
