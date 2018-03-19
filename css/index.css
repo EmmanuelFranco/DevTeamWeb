@@ -405,10 +405,15 @@ margin:  10px 10px 10px 0px;
     font-size: 18px;
 }
 
-@media only screen and (min-width: 781) and (max-width: 1190px) {
-  
+@media only screen and (min-width: 800) and (max-width: 1190px) {
+  h1 { font-size: 50px;}
+		h2 { font-size: 28px;}
+		h3 { font-size: 28px;}
+		a  { font-size: 13px;}
+		p  { font-size: 15px;}
+
 .menu a{
- font-size: 20px;
+ font-size: 17px;
  padding-left: 0px;
  padding-right: 0px;
  margin: 0;
@@ -423,11 +428,15 @@ padding-left: 10%;
 margin: 0;
 padding-top: 0;
 }
+.logotipo{
+	margin: 0;
+	padding: 0;
+}
   
 }
 
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) {
 		h1 { font-size: 50px;}
 		h2 { font-size: 28px;}
 		h3 { font-size: 28px;}
@@ -440,6 +449,7 @@ padding-top: 0;
 	padding-bottom: 320px;
 	opacity: 1;
 	text-align:left;
+	position: absolute;
 	}	
 
 	.p1{
@@ -477,14 +487,16 @@ padding-top: 0;
   	}	
 
 	.portada { 
-	background-image: url('../Images/background2.jpg'); 		
-	color: white; 
-	margin-top: 0;
-	box-shadow: 1px 1px 5px #000;
-	padding-bottom:0;
-	overflow: hidden;
-	} 
+	/*background-image: url('../Images/background2.jpg');*/ 		
+
+	background: black;
 	
+	}
+
+	.equipo{
+		background: red;
+	}
+
 	.tecnologias img{
 	width: 20%;
 	}
@@ -549,6 +561,7 @@ padding-top: 0;
       display: block;
   }
 }
+
 	
 #myBtn {
     display: none; /* Hidden by default */
