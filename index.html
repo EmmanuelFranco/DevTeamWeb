@@ -67,6 +67,7 @@ function navbarScroll() {
 </script>
 
 
+
 	<head>
 		<title>Open Desing</title>
 		<meta charset="utf-8"/>
@@ -129,7 +130,7 @@ function navbarScroll() {
  			<div class = "portadaText" >
 
 				<h1 class="titulo" > Open Desing</h1><!-- titulo -->
-				<h3 class="title-a" > Diseño web  Aplicaciones Moviles Base de datos</h3><!-- resumen -->
+				<h3 class="title-a" > Soluciones de software Diseño web  Aplicaciones Moviles</h3><!-- resumen -->
 
 				<button href = index.html> Ver Mas</button> <!-- boton -->
 
@@ -141,7 +142,7 @@ function navbarScroll() {
 
 
 
-		<section id = "equipo" class= "equipo"> <!--Seccion2-->
+		<section id = "equipo" class= "equipo1"> <!--Seccion2-->
 
 		<div class= "wrapper">
 
@@ -299,7 +300,7 @@ function openTab(tabName) {
 
 <div class="columns">
   <ul class="price" >
-    <li class="header">Basic</li>
+    <li class="header2">Basic</li>
     <li class="grey"> $4,572 </li>
     <li>6 meses de servicio tecnico</li>
     <li>Home y 5 secciones</li>
@@ -311,7 +312,7 @@ function openTab(tabName) {
 
 <div class="columns">
   <ul class="price">
-    <li class="header" style="background-color:green">Pro</li>
+    <li class="header2" style="background-color:#424242">Pro</li>
     <li class="grey">$ 24.99 / year</li>
     <li>25GB Storage</li>
     <li>25 Emails</li>
@@ -323,7 +324,7 @@ function openTab(tabName) {
 
 <div class="columns">
   <ul class="price">
-    <li class="header">Premium</li>
+    <li class="header2">Premium</li>
     <li class="grey">$ 49.99 / year</li>
     <li>50GB Storage</li>
     <li>50 Emails</li>
@@ -332,22 +333,80 @@ function openTab(tabName) {
     <li class="grey"><a href="#" class="button">Sign Up</a></li>
   </ul>
 </div>
-
 </section>
 	
 <h2 style="text-align:center">Clientes satisfechos</h2>
 
-<div class="container">
-  <img src="./Images/tipo1.png" alt="Avatar" style="width:90px">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="container">
+  <img src="./Images/tipo3.png" alt="Avatar" style="width:90px">
   <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
   <p>Emmanuel es un gran programador y diseñador web!.</p>
 </div>
 
-<div class="container">
+</div>
+
+<div class="mySlides fade">
+ <div class="container">
+  <img src="./Images/tipo3.png" alt="Avatar" style="width:90px">
+  <p><span>Rebecca Flex.</span> CEO at Company.</p>
+  <p>Soy un CEO y lo apruebo!</p>
+</div>
+
+
+</div>
+
+<div class="mySlides fade">
+  <div class="container">
   <img src="./Images/tipo1.png" alt="Avatar" style="width:90px">
   <p><span>Rebecca Flex.</span> CEO at Company.</p>
-  <p>El mejor Draven es el de Emma</p>
+  <p>Wow me ha ayudado mucho!</p>
 </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
 
 			<div  class= "preFooter">

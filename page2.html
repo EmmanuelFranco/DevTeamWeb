@@ -31,6 +31,7 @@
 
 </script>
 <style>
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -90,6 +91,19 @@ input[type=submit]:hover {
         margin-top: 0;
     }
 }
+
+	.portada2 {	
+	
+	background: black;
+	
+	}
+
+    .form {
+        background-color: #45a049;
+        margin:0;
+        padding:0;
+    }
+
 </style>
 	<head>
 		<title>Open Desing</title>
@@ -103,12 +117,10 @@ input[type=submit]:hover {
 		A:hover {color: white; text-decoration: none }
 		A:visited {color: grey; text-decoration: none }
 		#link { color: grey; text-decoration: none }
-
-
 		</style>
 
 	</head>
-	<body> 	
+	<body  onload="myFunction()" style="margin:0;"> 	
 
 		<section id= "portada" class= "portada2"> <!--Portada-->
 
@@ -150,11 +162,13 @@ input[type=submit]:hover {
 							</div>
 					</div>
 		
+<div id="loader"></div>
 
+<div style="display:none;" id="myDiv" class="animate-bottom"> 
 <div class="container">
   <div style="text-align:center">
     <h2>Contactanos</h2>
-    <p>Para mas informacion, te enviaremos un E-mail</p>
+    <p>Para mas informacion, Envia una solicitud</p>
   </div>
   <div class="row">
     <div class="column">
@@ -162,18 +176,18 @@ input[type=submit]:hover {
     </div>
     <div class="column">
       <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
+ 		<label for="fname">Nombre</label>
+        <input type="text" id="fname" name="firstname" placeholder="Tu Nombre..">
+        <label for="lname">Apellido</label>
+        <input type="text" id="lname" name="lastname" placeholder="Tu Apellido..">
+        <label for="country">Pais</label>
         <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
+          <option value="australia">Argentina</option>
+          <option value="canada">Brazil</option>
+          <option value="usa">Chile</option>
         </select>
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <textarea id="subject" name="subject" placeholder="Escriba algo.." style="height:170px"></textarea>
         <input type="submit" value="Submit">
       </form>
     </div>
@@ -192,19 +206,22 @@ function myMap() {
 }
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> 
-	
-			<footer class= "footerVacio">
-			<div class= "contacto">
-						
-						<a href="tel:+573024456678"><strong>Telefono: </strong><span>+573024456678</span></a>
-						<a href="mailto:contacto@contacto.com"><strong>E-mail: </strong><span>contacto@contacto.com</span></a>
-						</div>
-
-			</footer>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> 	
+	</div>
 
 
+<script>
+var myVar;
 
+function myFunction() {
+    myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 
 	</body>
 </html>
