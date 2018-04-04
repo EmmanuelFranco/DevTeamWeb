@@ -10,7 +10,10 @@
 	width: 100%;
 	
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> a8482681e207af61646221a8e0940d9da1e31fa4
 	.small {
 	
     height: 70px;
@@ -420,6 +423,7 @@ margin:  10px 10px 10px 0px;
  padding-right: 0px;
  margin: 0;
  }
+<<<<<<< HEAD
 
 .menu{
 padding:0;
@@ -438,6 +442,26 @@ padding-top: 0;
 }
 
 
+=======
+
+.menu{
+padding:0;
+padding-left: 10%;
+}
+
+.menu li{
+margin: 0;
+padding-top: 0;
+}
+.logotipo{
+	margin: 0;
+	padding: 0;
+}
+  
+}
+
+
+>>>>>>> a8482681e207af61646221a8e0940d9da1e31fa4
 @media screen and (max-width: 800px) {
 		h1 { font-size: 50px;}
 		h2 { font-size: 28px;}
@@ -470,8 +494,13 @@ padding-top: 0;
 	}
 
 	.menu {
+<<<<<<< HEAD
     width:100%;
     text-align: center;
+=======
+    	width:100%;
+    	text-align: center;
+>>>>>>> a8482681e207af61646221a8e0940d9da1e31fa4
 	overflow: hidden;
 	padding-left: 0;
 	padding-right: 10%;	
@@ -490,6 +519,7 @@ padding-top: 0;
 
 	.portada { 
 	/*background-image: url('../Images/background2.jpg');*/ 		
+<<<<<<< HEAD
 
 	background: black;
 	
@@ -503,6 +533,15 @@ padding-top: 0;
 	width: 20%;
 	}
 
+=======
+	background: black;
+	}
+
+	.tecnologias img{
+	width: 20%;
+	}
+
+>>>>>>> a8482681e207af61646221a8e0940d9da1e31fa4
 	.portadaText{
 	padding: 0 0 0 0;
 	color: transparent;
@@ -536,12 +575,15 @@ padding-top: 0;
   margin: 16px;
 }
 
+<<<<<<< HEAD
 .container h2{
 	margin-top:10px;
 	margin-bottom: 5px;
 
 }
 
+=======
+>>>>>>> a8482681e207af61646221a8e0940d9da1e31fa4
 .container::after{
   content: "";
   clear: both;
@@ -569,6 +611,7 @@ padding-top: 0;
       display: block;
   }
 }
+
 	
 #myBtn {
     display: none; /* Hidden by default */
@@ -591,6 +634,7 @@ padding-top: 0;
      background-color: red; /* Set a background color */
     }
  
+<<<<<<< HEAD
 
 
  * {box-sizing: border-box;}
@@ -705,3 +749,5 @@ padding-top: 0;
 }
 
 
+=======
+>>>>>>> a8482681e207af61646221a8e0940d9da1e31fa4
