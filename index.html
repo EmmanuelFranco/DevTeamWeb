@@ -67,14 +67,60 @@ function navbarScroll() {
 </script>
 
 <script type="text/javascript">
-	var array = new Array("./Images/tipo1.png","./Images/tipo2.png","./Images/tipo3.png");
-	function imgPicker(){
+	
+	function imgPicker1(){
  	var randomNum = Math.floor(Math.random() * array.length);
     document.getElementById("myPicture").src = array[randomNum];
 }
 </script>
+<script type="text/javascript">
+	
+	function imgPicker2(){
+ 	var randomNum = Math.floor(Math.random() * 3);
+    document.getElementById("myPicture2").src = array[randomNum];
+}
+</script>
+<script type="text/javascript">
+	
+	function imgPicker3(){
+ 	var randomNum = Math.floor(Math.random() * array.length);
+    document.getElementById("myPicture3").src = array[randomNum];
+}
+</script>
+<script type="text/javascript">
+	
+	function imgPicker4(){
+ 	var randomNum = Math.floor((Math.random() * 6));
+    document.getElementById("myPicture4").src = array[randomNum];
+}
+</script>
+<script type="text/javascript">
+	
+	function imgPicker5(){
+ 	var randomNum = Math.floor(Math.random() * array.length);
+    document.getElementById("myPicture5").src = array[randomNum];
+}
+</script>
 
+<script type="text/javascript">
+	var array = new Array("./Images/usr3.png","./Images/usr4.png","./Images/usr5.png","./Images/usr6.png","./Images/usr7.png","./Images/usr8.png","./Images/usr9.png","./Images/usr10.png");
+	function imgPicker6(){
+ 	var randomNum = Math.floor(Math.random() * array.length);
+    document.getElementById("myPicture6").src = array[randomNum];
+}
+</script>
+<script type="text/javascript">
+	
+	function start(){
+		imgPicker1();
+		imgPicker2();
+		imgPicker3();
+		imgPicker4();
+		imgPicker5();
+		imgPicker6();
 
+	}
+</script>
 
 
 
@@ -98,7 +144,7 @@ function navbarScroll() {
 		</style>
 
 	</head>
-	<body  onload="imgPicker()" > 	
+	<body  onload="start()" > 	
 
 		<section id= "portada" class= "portada"> <!--Portada-->
 
@@ -364,8 +410,7 @@ function openTab(tabName) {
   <p>Emmanuel es un gran programador y diseñador web!.</p>
 </div>
 <div class="container">
-	<button onclick="imgPicker()"> Ver mas comentarios  </button>
-  <img src="" id="myPicture" alt="Avatar" style="width:90px">
+  <img src="" id="myPicture2" alt="Avatar" style="width:90px">
   <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
   <p>Emmanuel es un gran programador y diseñador web!.</p>
 </div>
@@ -394,26 +439,9 @@ function openTab(tabName) {
 </div>
 </div>
 
-<div class="mySlides fade">
-  <div class="container7">
-  <img src="./Images/tipo3.png" id="myPicture7" alt="Avatar" style="width:90px">
-  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
-  <p>Emmanuel es un gran programador y diseñador web!.</p>
-</div>
-<div class="container">
-  <img src="./Images/tipo3.png" id="myPicture8" alt="Avatar" style="width:90px">
-  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
-  <p>Emmanuel es un gran programador y diseñador web!.</p>
-</div>
-<div class="container">
-  <img src="./Images/tipo3.png" id="myPicture9" alt="Avatar" style="width:90px">
-  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
-  <p>Emmanuel es un gran programador y diseñador web!.</p>
-</div>
-</div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<a class="prev"  onclick="plusSlides(-1) " >&#10094; </a>
+<a class="next" onclick="plusSlides(1) ">&#10095;</a>
 
 </div>
 <br>
