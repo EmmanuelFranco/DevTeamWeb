@@ -66,10 +66,22 @@ function navbarScroll() {
 }		
 </script>
 
+<script type="text/javascript">
+	var array = new Array("./Images/tipo1.png","./Images/tipo2.png","./Images/tipo3.png");
+	function imgPicker(){
+ 	var randomNum = Math.floor(Math.random() * array.length);
+    document.getElementById("myPicture").src = array[randomNum];
+}
+</script>
 
+
+
+
+
+</script>
 
 	<head>
-		<title>Open Desing</title>
+		<title>Open Design</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/index.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
@@ -86,7 +98,7 @@ function navbarScroll() {
 		</style>
 
 	</head>
-	<body> 	
+	<body  onload="imgPicker()" > 	
 
 		<section id= "portada" class= "portada"> <!--Portada-->
 
@@ -96,8 +108,8 @@ function navbarScroll() {
 
 								<figure class= "logotipo"> <!-- Logotipo -->
 								<a href = index.html>
-								<img src ="./Images/logo.png" width="80" height="40" />
-								<a href  = index.html >  Open Desing </a>
+								<img src ="./Images/logo.png" width="80" height="57" />
+								<a href  = index.html >  Open Design </a>
 								</figure>
 									<nav class = "menu"> <!--menu-->
 
@@ -107,7 +119,7 @@ function navbarScroll() {
 												<a href  = index.html >  Home</a>
 											</li>
 											<li>
-												<a href = #equipo>  Nuestro equipo</a>
+												<a href = #equipo>  Equipo</a>
 											</li>
 											<li>
 												<a href = #Actividades> Actividades</a>
@@ -118,6 +130,10 @@ function navbarScroll() {
 											<li>
 												<a href = #precios>  Precios</a>
 											</li>
+											<li>
+												<a href = page2.html>  Contactanos</a>
+											</li>
+											
 											
 										</ul>
 
@@ -129,18 +145,16 @@ function navbarScroll() {
 		
  			<div class = "portadaText" >
 
-				<h1 class="titulo" > Open Desing</h1><!-- titulo -->
+				<h1 class="titulo" > Open Design</h1><!-- titulo -->
 				<h3 class="title-a" > Soluciones de software Diseño web  Aplicaciones Moviles</h3><!-- resumen -->
 
-				<button href = index.html> Ver Mas</button> <!-- boton -->
+				<!-- <button href = index.html> Ver Mas</button> boton -->
 
 			</div>
 
 
 
 		</section>
-
-
 
 		<section id = "equipo" class= "equipo1"> <!--Seccion2-->
 
@@ -152,26 +166,29 @@ function navbarScroll() {
 
 			<article class= "equipo" > <!-- Equipo 1 -->
 
-					
-							<div class= "Integrantes"> 
-								<div class= "p1" 	> 
-								<img src ="./Images/tipo1.png" width= "50" height= "50" />
-								<a id="link" href = https://github.com/EmmanuelFranco > Emmanuel Franco </a>
+					  
+
+					  <div class= "Act"> 
+								
+								<div class= "Act1" > 
+									<img src ="./Images/tipo1.png" width= "50" height= "50"/ >
+									<a id="link"  > <br> Emmanuel <br> Franco </a>
 								</div>
-								<div class= "p1"> 
-								<img src ="./Images/tipo2.png" width= "50" height= "50"/>
-								<a id="link" href = https://github.com/SamuelRolonC >Samuel Cicciari</a>
+								
+								
+								<div class= "Act1"> 
+									<img src ="./Images/tipo2.png" width= "50" height= "50"/>
+									<a id="link"  > <br> Samuel<br>  Cicciari</a>						
 								</div>
-								<div class= "p1"> 
-								<img src ="./Images/tipo3.png" width= "50" height= "50"/>		
-								<a id="link" href = https://github.com/jmgaitan		>Juan <br>  Manuel</a>
+								
+								<div class= "Act1"> 
+											<img src ="./Images/tipo3.png" width= "50" height= "50"/>
+										<a id="link"> <br> Juan <br>  Manuel</a>
 								</div>
-								<div class= "p1"> 
-								<img src ="./Images/tipo4.png" width= "50" height= "50"/>	
-								<a id="link" href = index.html >Mati Calegari</a>
-								</div>		
-							</div>
-							
+									
+							</div>	
+
+						
 
 			</article>
 </section>
@@ -342,28 +359,55 @@ function openTab(tabName) {
 
 <div class="mySlides fade">
   <div class="container">
-  <img src="./Images/tipo3.png" alt="Avatar" style="width:90px">
+  <img src="" id="myPicture" alt="Avatar" style="width:90px">
   <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
   <p>Emmanuel es un gran programador y diseñador web!.</p>
 </div>
-
+<div class="container">
+  <img src="" id="myPicture2" alt="Avatar" style="width:90px">
+  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+  <p>Emmanuel es un gran programador y diseñador web!.</p>
 </div>
-
-<div class="mySlides fade">
- <div class="container">
-  <img src="./Images/tipo3.png" alt="Avatar" style="width:90px">
-  <p><span>Rebecca Flex.</span> CEO at Company.</p>
-  <p>Soy un CEO y lo apruebo!</p>
+<div  class="container">
+  <img  src=""  id="myPicture3" alt="Avatar" style="width:90px">
+  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+  <p>Emmanuel es un gran programador y diseñador web!.</p>
 </div>
-
-
 </div>
 
 <div class="mySlides fade">
   <div class="container">
-  <img src="./Images/tipo1.png" alt="Avatar" style="width:90px">
-  <p><span>Rebecca Flex.</span> CEO at Company.</p>
-  <p>Wow me ha ayudado mucho!</p>
+  <img src="" id="myPicture4" alt="Avatar" style="width:90px">
+  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+  <p>Emmanuel es un gran programador y diseñador web!.</p>
+</div>
+<div class="container">
+  <img src=""  id="myPicture5"alt="Avatar" style="width:90px">
+  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+  <p>Emmanuel es un gran programador y diseñador web!.</p>
+</div>
+<div class="container">
+  <img src="" id="myPicture6" alt="Avatar" style="width:90px">
+  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+  <p>Emmanuel es un gran programador y diseñador web!.</p>
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="container7">
+  <img src="./Images/tipo3.png" id="myPicture7" alt="Avatar" style="width:90px">
+  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+  <p>Emmanuel es un gran programador y diseñador web!.</p>
+</div>
+<div class="container">
+  <img src="./Images/tipo3.png" id="myPicture8" alt="Avatar" style="width:90px">
+  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+  <p>Emmanuel es un gran programador y diseñador web!.</p>
+</div>
+<div class="container">
+  <img src="./Images/tipo3.png" id="myPicture9" alt="Avatar" style="width:90px">
+  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+  <p>Emmanuel es un gran programador y diseñador web!.</p>
 </div>
 </div>
 
@@ -372,12 +416,6 @@ function openTab(tabName) {
 
 </div>
 <br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
 
 <script>
 var slideIndex = 1;
@@ -423,6 +461,7 @@ function showSlides(n) {
 				<div class= "wrapper">
 
 						<div class= "contacto">
+						<a>Informacion de contacto: </a>
 						<a href="tel:+573024456678"><strong>Telefono: </strong><span>+573024456678</span></a>
 						<a href="mailto:contacto@contacto.com"><strong>E-mail: </strong><span>contacto@contacto.com</span></a>
 						</div>
@@ -436,7 +475,7 @@ function showSlides(n) {
 										<input type="email" nombre="email" required placeholder="E-mail" required id="email" />
 
 									</div>
-									
+
 									<div class="col2">
 										<label for="comentario">Comentarios</label>
 										<textarea name="comentairos" id="comentarios cols="30" rows="7"></textarea>
@@ -446,8 +485,9 @@ function showSlides(n) {
 									</div>
 
 
-								</div>
 
+								</div>
+								
 							</form>
 
 

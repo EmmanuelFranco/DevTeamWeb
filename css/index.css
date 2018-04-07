@@ -8,7 +8,8 @@
 	padding-bottom: 20px;
 	position: fixed;
 	width: 100%;
-	
+	z-index: 999;
+
 	}
 
 	.small {
@@ -20,22 +21,16 @@
     }
 
 	.headerText {	
-	
 	font-family:'Open Sans', sans-serif;
-	box-shadow: 1px 1px 5px #000;
+	box-shadow: 1px 1px 4px #000;
 	height: 70px;	
-	
 	padding-top:0;
-
 	}
 
 	.headerText a:hover{
 	color:white;	
-	
 	}
 
-	
-	
 	.logotipo{
 	display: inline-block;
 	margin:5px;
@@ -43,7 +38,7 @@
 
  
 	body{
-	background:#f2f2f2;
+	background:#ffffff;
 	margin: 0;
 	/* background: #fffffa; */
 	}
@@ -57,12 +52,14 @@ margin-top: 50px;
 }
 
 .footer{	
-background:#e6e6e6;
+background:#F5F5F5;
+padding-bottom:20px;
+
 }
 
 
 .footer .wrapper{
-	padding-top: 20px;
+	padding-top: 30px;
 	display: flex;
 	justify-content: space-between;
 
@@ -86,7 +83,10 @@ background:#e6e6e6;
 .preFooter a:hover{
 color:#1ab2ff;
 transition: .7s;
-font-family: 'Heebo', sans-serif;font-size: 40px;
+}
+
+.preFooter {
+	font-family: 'Heebo', sans-serif;
 }
 
 
@@ -96,15 +96,19 @@ float:right;
 }
 .preFooter h3{
 	display: inline-block;
-	font-family: 'Heebo', sans-serif;font-size: 30px;
+	font-size: 30px;
 	color:#d9d9d9;
+	margin:0
 }
 
 .preFooter h2{
-	font-family: 'Heebo', sans-serif;font-size: 40px;
+	font-size: 40px;
 	color:#d9d9d9;	
-	padding-bottom: 0;
+	margin:0;
 	}
+.preFooter h3 a{
+	color:#9E9E9E;
+}
 
 
 .menu {
@@ -137,7 +141,7 @@ float:right;
 	background-image: url('../Images/background.jpg'); 
 	color: white; 
 	padding-bottom:270px; 
-	box-shadow: 1px 1px 5px #000;
+	box-shadow: 1px 1px 2px #000;
 	} 
 
 		
@@ -174,9 +178,8 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 .titulo{
 	
 	font-size: 70px;
-	
 	margin-top: 0;
-	margin-bottom: 15px ;
+	margin-bottom: 30px ;
 	line-height: 20px;
 	
 	
@@ -192,7 +195,7 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 }
 	
 .frase{	
-		font-size: 40px;
+		font-size: 30px;
 		margin-bottom: 20px;
 			
 }
@@ -202,22 +205,14 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 	
 }
 
-		
-
+	
 
 .Seccionfrase{	
-	margin-top: 40px;
-	background:#e6e6e6;
+	
+	background:#f5f5f5 ;
 	
 }
 
-.Integrantes{
-	display: flex;
-	justify-content: space-between;
-	float:left;
-	margin-left: 5%;
-	
-}
 
 	.p1 {
 	margin-left: 20%;
@@ -237,11 +232,10 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 		 opacity: 0.3;
 	}
 	
-	.equipo a{
-	width: 33%;
-	}
+	
 	.Act1 a{
 	width: 33%;
+
 	}
 
 .equipo img
@@ -271,15 +265,13 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 }
 
  h2{
- 	font-family: 'Heebo', sans-serif;font-size: 70px;
-
-	color:#d9d9d9;
+ 	font-family: 'Roboto Slab';font-size: 60px;
+ 	padding-top: 20px;
+	color:black;
 		
 }
 
-.equipo ul a{
-	font-family: 'Heebo', sans-serif;font-size: 15px;
-}
+
 
 
 .Nombres .wrapper {
@@ -314,8 +306,7 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 }
 
 .contacto{
-display: flex;
-width: 400px;
+
 flex-wrap: wrap;
 }
 
@@ -325,26 +316,39 @@ flex-wrap: wrap;
 
 .contacto strong{
 	display: block;	
+	margin-top: 10%;
 	color:black;
 }
 .contacto span{
 	color: black;
 }
 
-.contacto a{
+.contacto a {
+font-family: "Roboto Slab";
+color:grey;
+
 margin:  10px 10px 10px 0px;
+}
+.contacto a:hover{
+color:black;
+}
+
+.contacto span:hover{
+color:#1ab2ff;
+transition: .7s;
 }
 
 .col1,.col2{
+
 	display: flex;
 	flex-direction: column;
 	margin-left: 20px;
 }
 
 .formulario{
-	margin-left:120px;
+	
 	display: flex;
-	width: 600px;
+	width: 40%;
 	color:black;
 }
 
@@ -361,6 +365,7 @@ margin:  10px 10px 10px 0px;
     float: left;
     width: 33.3%;
     padding: 8px; 
+    margin-bottom: 100px;
 }
 
 .price {
@@ -430,17 +435,15 @@ padding-top: 0;
 .logotipo{
 	margin: 0;
 	padding: 0;
+} 
 }
-  
-}
-
 
 @media screen and (max-width: 800px) {
 		h1 { font-size: 50px;}
 		h2 { font-size: 28px;}
 		h3 { font-size: 28px;}
 		a  { font-size: 13px;}
-		p  { font-size: 15px;}
+		p  { font-size: 20px;}
 
 	.header{
    	width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
@@ -487,24 +490,30 @@ padding-top: 0;
 
 	.portada { 
 	/*background-image: url('../Images/background2.jpg');*/ 		
-
+	padding-bottom:370px;
+	box-shadow: 1px 1px 2px #000;
 	background: black;
-	
 	}
 
 	.equipo{
 		background: black;
+
 	}
 
+	.logotipo img{
+	width: 8%;
+	height: 15%;
+	}
 	.tecnologias img{
 	width: 20%;
 	}
 
 	.portadaText{
-	padding: 0 0 0 0;
+	padding:0;
 	color: transparent;
   	background: black;
    	opacity: 1;
+
 	}
 
 	.portada button{
@@ -514,9 +523,11 @@ padding-top: 0;
 
  	.columns {
     width: 100%;
+
     }
     .footer{
 	width:100%;
+
     }
 
  
@@ -526,12 +537,12 @@ padding-top: 0;
 
 
 .container {
-  border: 2px solid #ccc;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 16px;
-  margin: 16px;
+  background-color: white;
+  padding: 26px;
+  
 }
+
+
 
 .container h2{
 	margin-top:10px;
@@ -596,9 +607,13 @@ padding-top: 0;
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+  	max-width: 56%;
+  	position: relative;
+ 	margin: auto;
+	display: flex;
+	flex-direction: column;
+	background-color: transparent;
+
 }
 
 .numbertext {
@@ -641,11 +656,11 @@ padding-top: 0;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+
 }
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 
