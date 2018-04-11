@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<!-- Script para deslizar!-->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
 		type="text/javascript" charset="utf-8"></script>
 
 		<script type="text/javascript" >
@@ -32,6 +32,7 @@
 
 
 <script type="text/javascript">
+//Button Top
 	window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -60,9 +61,12 @@ function navbarScroll() {
   var y = window.scrollY;
   if (y > 70) {
     $('.header').addClass('small');
+	$('.logotipo').addClass('logotipo2');
   } else if (y < 70) {
     $('.header').removeClass('small');
+	$('.logotipo').removeClass('logotipo2');
   }
+  
 }		
 </script>
 
@@ -135,6 +139,8 @@ function navbarScroll() {
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" media="@media screen and (max-width: 780px)" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" media="@media screen and (max-width: 1300px)" href="css/index.css" />
+		<link rel="srylesheet" type="text/css" media= "@media screen and (max-width: 768px)" href="scss/index.css"/>
+		 
 		<style type="text/css" media="screen">
 		A:link {color: grey; text-decoration: none }
 		A:hover {color: white; text-decoration: none }
@@ -145,22 +151,17 @@ function navbarScroll() {
 
 	</head>
 	<body  onload="start()" > 	
-
 		<section id= "portada" class= "portada"> <!--Portada-->
-
 		<div class="header" id=myHeader> <!--Header-->
-	
-					<div class="headerText"> <!--Header-->
+						<div class="headerText"> <!--Header-->
 
 								<figure class= "logotipo"> <!-- Logotipo -->
 								<a href = index.html>
-								<img src ="./Images/logo.png" width="80" height="57" />
+								<img src ="./Images/logo.png" width="80" height="57" /> 
 								<a href  = index.html >  Open Design </a>
 								</figure>
 									<nav class = "menu"> <!--menu-->
-
-									<ul>
-
+										<ul>
 											<li>
 												<a href  = index.html >  Home</a>
 											</li>
@@ -179,15 +180,10 @@ function navbarScroll() {
 											<li>
 												<a href = page2.html>  Contactanos</a>
 											</li>
-											
-											
 										</ul>
-
 									</nav>
-
-
 							</div>
-					</div>
+		</div>
 		
  			<div class = "portadaText" >
 
@@ -203,7 +199,7 @@ function navbarScroll() {
 		</section>
 
 		<section id = "equipo" class= "equipo1"> <!--Seccion2-->
-
+	
 		<div class= "wrapper">
 
 			<div align="center">
@@ -212,7 +208,7 @@ function navbarScroll() {
 
 			<article class= "equipo" > <!-- Equipo 1 -->
 
-					  
+			
 
 					  <div class= "Act"> 
 								
@@ -241,7 +237,7 @@ function navbarScroll() {
 
 				<div  class= "Seccionfrase">
 										<section id = "frase" class= "frase wrapper">
-										<p> "Try not to become a man of success, but rather try to become a man of value." </p>
+										<p> Impulsa tu negocio con la ultima tecnoglogia </p>
 									</section>
 							</div>
 
@@ -326,7 +322,8 @@ function openTab(tabName) {
 
 			<div  class= "Seccionfrase">
 						<section id = "frase" class= "frase wrapper">
-						<p> "Try not to become a man of success, but rather try to become a man of value." </p>
+						<p> ¿Buscás una solución rápida y efectiva?
+								En pocos días podemos desarrollar tu sitio web, dinámico, moderno y optimizado para todo dispositivo. </p>
 						</section>
 			</div>
 
@@ -474,8 +471,29 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+<div class= "wrapper">
+	
+<form class = "formulario">
+		<div class= "col1">
+					<label for="nombre">Nombre</label>
+				<input type="text" name= "nombre" required placeholder="Nombre" required id="nombre"  />
+				<!-- <label for="apellido">Apellido</label>
+				<input type="text" name="apellido" required placeholder="Apellido" required id="apellido" /> -->
+				<label for="email">Institucion </label>
+				<input type="institucion" nombre="institucion" required placeholder="institucion" />
 
+			</div>
 
+			<div class="col2">
+				<label for="comentario">Comentarios</label>
+				<textarea name="comentarios" id="comentarios" cols="30" rows="7"> </textarea>
+
+				<input type="submit" value="Enviar">
+			</div>
+		</div>
+	</form>
+
+</div>
 			<div  class= "preFooter">
 				<div class= "wrapper">
 						<section id = "frase" class= "preFooter">
@@ -491,38 +509,20 @@ function showSlides(n) {
 
 						<div class= "contacto">
 						<a>Informacion de contacto: </a>
+						
 						<a href="tel:+573024456678"><strong>Telefono: </strong><span>+573024456678</span></a>
 						<a href="mailto:contacto@contacto.com"><strong>E-mail: </strong><span>contacto@contacto.com</span></a>
 						</div>
-							<form class = "formulario">
-								<div class= "col1">
-											<label for="nombre">Nombre</label>
-										<input type="text" name= "nombre" required placeholder="Nombre" required id="nombre"  />
-										<!-- <label for="apellido">Apellido</label>
-										<input type="text" name="apellido" required placeholder="Apellido" required id="apellido" /> -->
-										<label for="email">E-mail </label>
-										<input type="email" nombre="email" required placeholder="E-mail" required id="email" />
-
-									</div>
-
-									<div class="col2">
-										<label for="comentario">Comentarios</label>
-										<textarea name="comentairos" id="comentarios cols="30" rows="7"></textarea>
-										<input type="submit" value="Enviar">
-
-
-									</div>
-
-
-
+							
+						<div class="col1"> 
+								<br><a href="page2.html">Envia un mensaje privado!</a>
+								<link> Respondemos en el dia! </link>
+							</br><link>FAQ Preguntas frecuentes</link>
 								</div>
-								
-							</form>
-
 
 
 				</div>
-
+				
 			</footer>
 
 
