@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<!-- Script para deslizar!-->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
 		type="text/javascript" charset="utf-8"></script>
 
 		<script type="text/javascript" >
@@ -126,7 +126,12 @@ function navbarScroll() {
 	}
 </script>
 
-
+<script type="text/javascript">
+	
+	function Alerta(){
+		 alert("Registro exitoso");
+	}
+</script>
 
 </script>
 
@@ -140,7 +145,7 @@ function navbarScroll() {
 		<link rel="stylesheet" type="text/css" media="@media screen and (max-width: 780px)" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" media="@media screen and (max-width: 1300px)" href="css/index.css" />
 		<link rel="srylesheet" type="text/css" media= "@media screen and (max-width: 768px)" href="scss/index.css"/>
-		 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style type="text/css" media="screen">
 		A:link {color: grey; text-decoration: none }
 		A:hover {color: white; text-decoration: none }
@@ -214,7 +219,7 @@ function navbarScroll() {
 								
 								<div class= "Act1" > 
 									<img src ="./Images/tipo1.png" width= "50" height= "50"/ >
-									<a id="link"  > <br> Emmanuel <br> Franco </a>
+									<a id="link"  >  <br> <br><br> Emmanuel <br> Franco </a>
 								</div>
 								
 								
@@ -248,34 +253,52 @@ function navbarScroll() {
 		<div class= "wrapper">
 
 			<div align="center">
-			<h2>  Desarrollamos </h2> <!-- Item 1 -->
+			<h2>  Servicios </h2> <!-- Item 1 -->
 			</div>
 
 				<article class= "Actividades" > <!-- Equipo 1 -->
-							
+									
+
 							<div class= "Act"> 
-								<div class="column" onclick="openTab('b1');" >
-								<div class= "Act1" > 
-									<img src ="./Images/android.png" width= "50" height= "50"/ >
-									<a id="link"  > <br>  Apps  <br> móviles</a>
-								</div>
-								</div>
-								<div class="column" onclick="openTab('b2');" >
-								<div class= "Act1"> 
-									<img src ="./Images/web.png" width= "50" height= "50"/>
-									<a id="link"  > <br>  Proyectos  <br> webs</a>							
-								</div></div>
-								<div class="column" onclick="openTab('b3');" >
-								<div class= "Act1"> 
-											<img src ="./Images/pc.png" width= "50" height= "50"/>
-										<a id="link"> <br>  Sistemas de  <br> escritorio</a>
-								</div></div>
-									<div class="column" onclick="openTab('b4');" >
-									<div class= "Act1"> 
-											<img src ="./Images/db.png" width= "50" height= "50"/>
-										<a id="link" > <br>  Database  <br> structure</a>
-								</div></div>
+									<div class= "Act1" > 
 								
+									<h3 align="center">Ingenieria de  Software</a></h3>
+									<div class = "Act2"> 
+									<img src ="./Images/pc.png" width= "50" height= "50"/ >
+
+									</div>
+										<h3 align="center">Buscás una solución rápida y efectiva?</h3>
+									<h4 align="center"> En pocos días podemos desarrollar tu sitio web, dinámico.</h3>
+								</div>
+
+								<div class= "Act1" > 
+									<h3 align="center">Apps  móviles</h3>
+										<div class = "Act2"> 
+										<img src ="./Images/android.png" width= "50" height= "50"/ >
+									</div>
+									<h3 align="center">Buscás una solución rápida y efectiva?</h3>
+									<h4 align="center"> En pocos días podemos desarrollar tu sitio web, dinámico.</h3>
+								</div>		
+
+							
+							<div class= "Act1" > 
+									<h3 align="center">Database structure</h3>
+									<div class = "Act2"> 
+										<img src ="./Images/db.png" width= "50" height= "50"/ >
+
+									</div>
+									<h3 align="center">Buscás una solución rápida y efectiva?</h3>
+									<h4 align="center"> En pocos días podemos desarrollar tu sitio web, dinámico.</h3>
+								</div>
+							<div class= "Act1" > 
+									<h3 align="center"> Proyectos  webs</h3>
+										<div class = "Act2"> 
+									<img src ="./Images/web.png" width= "50" height= "50"/ >
+									</div>
+									<h3 align="center">Buscás una solución rápida y efectiva?</h3>
+									<h4 align="center"> En pocos días podemos desarrollar tu sitio web, dinámico.</h3>
+								</div>
+
 							</div>	
 
 							<div id="b1" class="containerTab" style="display:none;background: f2f2f2">
@@ -472,26 +495,30 @@ function showSlides(n) {
 }
 </script>
 <div class= "wrapper">
-	
-<form class = "formulario">
+
+	<form class="formulario" method="post" action="http://18.218.177.65/add.php">
 		<div class= "col1">
-					<label for="nombre">Nombre</label>
-				<input type="text" name= "nombre" required placeholder="Nombre" required id="nombre"  />
-				<!-- <label for="apellido">Apellido</label>
-				<input type="text" name="apellido" required placeholder="Apellido" required id="apellido" /> -->
-				<label for="email">Institucion </label>
-				<input type="institucion" nombre="institucion" required placeholder="institucion" />
+				<label for="nombre">Nombre</label>
+				<input type="text" name= "name" required placeholder="Nombre" required id="nombre"  />
+				<label for="institucion">Institucion </label>
+				<input type="institucion" name="org" required placeholder="institucion" />
 
 			</div>
 
 			<div class="col2">
 				<label for="comentario">Comentarios</label>
-				<textarea name="comentarios" id="comentarios" cols="30" rows="7"> </textarea>
+				<textarea name="comment" id="comentario" cols="30" rows="7"> </textarea>
 
-				<input type="submit" value="Enviar">
+				<input type="submit" value="Enviar" onclick="Alerta()">
 			</div>
 		</div>
 	</form>
+
+<form action="http://18.218.177.65/search.php" method="get" >
+  	
+    <button>Enviar</button>
+  </div>
+</form>
 
 </div>
 			<div  class= "preFooter">
@@ -515,9 +542,10 @@ function showSlides(n) {
 						</div>
 							
 						<div class="col1"> 
+							
 								<br><a href="page2.html">Envia un mensaje privado!</a>
 								<link> Respondemos en el dia! </link>
-							</br><link>FAQ Preguntas frecuentes</link>
+							    </br><link>FAQ Preguntas frecuentes</link>
 								</div>
 
 

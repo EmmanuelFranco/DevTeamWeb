@@ -61,11 +61,11 @@
 	}
 
 .wrapper {	
-width: 90%;
+width: 100%;
 max-width:1000px;
 margin: auto;
 overflow:hidden;
-margin-top: 50px;
+margin-top: 20px;
 }
 
 .footer{	
@@ -151,6 +151,11 @@ float:right;
 	color: white; 
 	padding-bottom:270px; 
 	box-shadow: 1px 1px 2px #000;
+	
+   	background-attachment: fixed;
+   	background-position: center;
+   	background-repeat: no-repeat;
+   	background-size: cover;
 	} 
 
 		
@@ -218,8 +223,8 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 
 .Seccionfrase{	
 	
-	background:#f5f5f5 ;
-	
+	background-color:#F5F5F5;
+   	
 }
 
 
@@ -242,14 +247,7 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 	}
 	
 	
-	.Act1 a{
-	width: 33%;
 
-	}
-
-.equipo1 {
-
-}
 
 .equipo img
  {
@@ -257,8 +255,8 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 	justify-content: space-between;
 	float:left;
 	
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: auto;
+	margin-right: auto;
 
  	max-width: 100%;
     height: auto;
@@ -279,12 +277,20 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 
  h2{
  	font-family: 'Roboto Slab';font-size: 60px;
- 	padding-top: 20px;
-	color:black;
-		
+ 	color:black;
+	padding-top: 	10px;
 }
 
-
+ h4{
+ 	font-family: 'Roboto Slab';font-size: 12px;
+ 	font-style: normal;
+ 	color:black;
+ 	margin-top:0;
+	}
+h3{
+ 	
+ 	margin-bottom: 2px;
+	}
 
 
 .Nombres .wrapper {
@@ -296,7 +302,7 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 }
 
 .Act{
-	width: 90%;
+	width: 100%;
     padding: 8px;
 	display: flex;
 	justify-content: space-between;
@@ -305,18 +311,21 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 }
 
 .Act1{
-	margin-left: 15%;
 	 cursor:pointer;
-}
+	 margin-left: auto;
+	 margin-right: auto;
+	}
 .Act1:hover{
 		 opacity: 0.3;
 		 
 }
-		
-.containerTab {
-    padding-top: 100px;
-    
+
+.Act2{
+	margin-left:auto;	
+	margin-right:auto;
+	width: 	15%;
 }
+
 
 .contacto{
 
@@ -352,10 +361,10 @@ transition: .7s;
 }
 
 .col1,.col2{
-
+	padding-top: 30px;
 	display: flex;
 	flex-direction: column;
-	margin-left: 20px;
+	
 }
 
 .formulario{
@@ -462,10 +471,12 @@ padding-top: 0;
 
 @media screen and (max-width: 800px) {
 		h1 { font-size: 50px;}
-		h2 { font-size: 28px;}
-		h3 { font-size: 28px;}
-		a  { font-size: 13px;}
-		p  { font-size: 20px;}
+		h2 { font-size: 40px;}
+		h3 { font-size: 20px;}
+		a  { font-size: 14px;}
+		p  { font-size: 16px;}
+		li  { font-size: 16px;}
+		
 
 	.header{
    	width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
@@ -480,15 +491,6 @@ padding-top: 0;
 	margin-left: 1%;
 	width: 100%;
 	padding: 20px;
-	}
-
-	.Act{
-	margin-left: 0;
-	width: 100%;
-	}
-
-	.Act1 {
-	margin-left: 1%;
 	}
 
 	.menu {
@@ -511,13 +513,10 @@ padding-top: 0;
   	}	
 
 	.portada { 
-	
 	padding-bottom:380px;
 	box-shadow: 1px 1px 2px #000;
 	background: black;
 	}
-
-
 
 	.logotipo img{
 	width: 8%;
@@ -548,11 +547,32 @@ padding-top: 0;
 	width:100%;
 
     }
+	.preFooter h2{
+		font-size: 20px;
+	}
 
- 
+
+	.tecnologias{
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+	}
+	
+
+
+	.Actividades img{
+		width: 	200%;
+		height: 200%;		
+	}
+	.Act1 a{
+	font-size: 	20px;
+	width: 33%;
+	}	
+
+
   	}
-
-
 
 
 .container {
@@ -560,8 +580,6 @@ padding-top: 0;
   padding: 26px;
   
 }
-
-
 
 .container h2{
 	margin-top:10px;
@@ -736,3 +754,37 @@ padding-top: 0;
 }
 
 
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	
+  }
+  
+  .fa:hover {
+	  opacity: 0.7;
+  }
+  
+  .fa-facebook {
+	background: #3B5998;
+	color: white;
+  }
+  
+  .fa-twitter {
+	background: #55ACEE;
+	color: white;
+  }
+  
+  .fa-google {
+	background: #dd4b39;
+	color: white;
+  }
+  
+  .fa-linkedin {
+	background: #007bb5;
+	color: white;
+  }
+  
