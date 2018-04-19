@@ -34,7 +34,8 @@
 
 .animate-bottom{
 background-color: #F5F5F5;
-padding-bottom: 140px;}
+padding-bottom: 2px;
+}
 
 
 * {
@@ -51,29 +52,22 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-}
 
-input[type=submit]:hover {
-    background-color: #45a049;
-}
+
 
 /* Style the container/contact section */
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 10px;
-}
+    padding: 0;
+} 
 
 /* Create two columns that float next to eachother */
 .column {
-    float: left;
-    width: 50%;
+   
+    width: 95%;
+    margin-left: auto;
+     margin-right: auto;
     margin-top: 6px;
     padding: 20px;
 }
@@ -117,7 +111,7 @@ input[type=submit]:hover {
 		<title>Open Design</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/index.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+      <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 		<link href="https://fonts.googleapis.com/css?family=Heebo:800" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style type="text/css" media="screen">
@@ -141,30 +135,7 @@ input[type=submit]:hover {
 								<img src ="./Images/logo.png" width="80" height="55" />
 								<a href  = index.html >  Open Design </a>
 								</figure>
-									<nav class = "menu"> <!--menu-->
-
-									<ul>
-
-											<li>
-												<a href  = index.html style="font-size:20px;">  Home</a>
-											</li>
-											<li>
-												<a href = #equipo style="font-size:20px;"> Equipo</a>
-											</li>
-                      <li>
-                        <a href = #Actividades style="font-size:20px;"> Actividades</a>
-                      </li>
-                      <li>
-												<a href = #tecnologias style="font-size:20px;"> Tecnologias</a>
-											</li>
-									   <li>
-                        <a href = #price style="font-size:20px;">  Precios</a>
-                      </li>
-											
-										</ul>
-
-									</nav>
-
+								
 
 							</div>
 					</div>
@@ -175,13 +146,15 @@ input[type=submit]:hover {
 <div class="container">
   <div style="text-align:center">
     <h2>Contactanos!</h2>
+  
     <p>Respondemos en el dia!  Envia una solicitud</p>
+      <div class="social-btns"><a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a><a class="btn twitter" href="#"><i class="fa fa-twitter"></i></a><a class="btn google" href="#"><i class="fa fa-google"></i></a><a class="btn skype" href="#"><i class="fa fa-skype"></i></a>
   </div>
   <div class="row">
-    <div class="column">
-      <div id="map" style="width:100%;height:500px"></div>
-    </div>
-    <div class="column">
+   <!-- <div class="column">
+      <div id="map" style="width:100%;height:500px"></div> 
+    </div>-->
+    <div class="column" >
       <form action="/action_page.php">
  		    <label for="fname">Nombre </label>
         <input type="text" id="fname" name="firstname" placeholder="Nombre y apellido..">
@@ -191,12 +164,12 @@ input[type=submit]:hover {
         <input type="text" id="asunto" name="asunto" placeholder="Asunto">
         <label for="subject">Mensaje</label>
         <textarea id="subject" name="subject" placeholder="¿Cual es tu proyecto? ¿Que esperas conseguir en la web? ¿Solo mostrar catalogo de productos y servicios?" style="height:170px"></textarea>
-        <input type="submit" value="Submit">  
+        <input type="submit" value="Enviar">  
       </form>
     </div>
   </div>
 </div>
-
+<!-- Equipo 1
 <script>
 // Initialize google maps
 function myMap() {
@@ -207,11 +180,12 @@ function myMap() {
   var marker = new google.maps.Marker({position:myCenter});
   marker.setMap(map);
 }
+
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>   
   
-
+ -->
 
 <script>
 var myVar;
