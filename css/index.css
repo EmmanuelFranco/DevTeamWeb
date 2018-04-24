@@ -1,5 +1,9 @@
 p{
 	font-size: 24px;
+
+ 	font-family: "Segoe UI",Arial,sans-serif;
+ 	
+	font-weight: 400;
 }
 .container p{
 	font-size:15px;
@@ -43,9 +47,7 @@ a{
 	}
 
 	.logotipo2 img{
-		height: 50px;
-		width: 68px;
-		margin: 0;
+	
 	}
 
 	.headerText {	
@@ -62,15 +64,14 @@ a{
 	.logotipo{
 	display: inline-block;
 	margin:5px;
+	margin-left: 20px;
+	}
+	.logotipo a{
+	margin-left: 20px;
 	}
 
-	.circle{
-		width:10px;height:10px;border-radius:10px;
-		font-size:10px;color:#fff;line-height:50px;
-		text-align:center;background:#000;
-		
-		animation-name: example;
-    	animation-duration: 4s;
+
+	
 }
 /* Standard syntax */
 @keyframes example {
@@ -157,7 +158,7 @@ float:right;
 .menu {
 	font-size: 20px;
 	display: inline-block;
-	padding-left: 15%;
+	padding-left: 		;
 	color:grey;
 
 }
@@ -295,7 +296,7 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 	margin-right: 10%;
  	max-width: 100%;
     height: auto;
-
+    margin-top : 5px;
 }
 
 

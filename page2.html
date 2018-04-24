@@ -1,33 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<!-- Script para deslizar!-->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
-		type="text/javascript" charset="utf-8"></script>
-
-		<script type="text/javascript" >
-		$(function(){
-
-     $('a[href*=#]').click(function() {
-
-     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-         && location.hostname == this.hostname) {
-
-             var $target = $(this.hash);
-
-             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-
-             if ($target.length) {
-
-                 var targetOffset = $target.offset().top;
-
-                 $('html,body').animate({scrollTop: targetOffset}, 1000);
-
-                 return false;
-            }
-       }
-   });
-});
-
+		
 
 </script>
 <style>
@@ -86,6 +60,14 @@ input[type=text], select, textarea {
 .menu ul a{
     color:transparent;
 }
+
+
+  .logotipo{
+  padding-top: 24px;
+  }
+  .logotipo a{
+  margin-left: 10px;
+  }
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
     .column, input[type=submit] {
@@ -132,8 +114,9 @@ input[type=text], select, textarea {
 
 								<figure class= "logotipo"> <!-- Logotipo -->
 								<a href = index.html>
-								<img src ="./Images/logo.png" width="80" height="55" />
-								<a href  = index.html >  Open Design </a>
+								<img src ="./Images/sketch.png" width="25" height="20" />
+              </a>
+								<a href  = index.html >  Open Code </a>
 								</figure>
 								
 
