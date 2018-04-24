@@ -1,6 +1,6 @@
 <?php
 
-if( isset($_POST['Submit']) ) {	
+if( isset($_POST['submit']) ) {	
 // Contact subject
 $subject =$_POST["subject"]; 
 // Details
@@ -8,12 +8,12 @@ $message=$_POST["detail"];
 
 $name=$_POST["name"];
 // Mail of sender
-$mail_from=$_POST["customer_mail"]; 
+$mail_from=$_POST["mail"]; 
 // From 
 $header="from: $name <$mail_from>";
 
 // Enter your email address
-$to ='advdpjindal@gmail.com';
+$to ='jmgaitan93@gmail.com';
 
 $send_contact=mail($to,$subject,$message,$header);
 }
