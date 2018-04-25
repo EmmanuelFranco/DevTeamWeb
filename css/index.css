@@ -88,7 +88,7 @@ a{
 	}
 
 .wrapper {	
-width: 100%;
+width: 90%;
 max-width:1000px;
 margin: auto;
 overflow:hidden;
@@ -281,9 +281,9 @@ background: linear-gradient{to left, #fe344e,#ff7250};
 	margin-left: auto;
 	margin-right: auto;
 
- 	max-width: 100%;
+ 	max-width: 90%;
 	height: auto;
-	margin-top: 50px;
+	margin-top: 0px;
 
 }
 
